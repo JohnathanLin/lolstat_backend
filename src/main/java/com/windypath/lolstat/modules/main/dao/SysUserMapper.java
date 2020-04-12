@@ -2,6 +2,7 @@ package com.windypath.lolstat.modules.main.dao;
 
 import com.windypath.lolstat.modules.main.pojo.SysUser;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -19,4 +20,12 @@ public interface SysUserMapper {
      * @return 用户信息列表
      */
     List<SysUser> getAllUser();
+
+    /**
+     * 根据用户名获取用户信息
+     *
+     * @param username 用户名
+     * @return 用户信息
+     */
+    SysUser findByUsername(@Param("username")String username);
 }

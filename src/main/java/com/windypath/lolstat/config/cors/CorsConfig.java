@@ -1,4 +1,4 @@
-package com.windypath.lolstat.config;
+package com.windypath.lolstat.config.cors;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

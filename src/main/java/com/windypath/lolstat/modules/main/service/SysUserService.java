@@ -16,4 +16,12 @@ public interface SysUserService {
      * @return 用户信息列表
      */
     List<SysUser> getAllUser();
+
+    /**
+     * 根据用户名查找用户
+     *
+     * @param username 用户名
+     * @return 对应的用户
+     */
+    SysUser findByUsername(String username);
 }

@@ -22,4 +22,10 @@ public class SysUserServiceImpl implements SysUserService {
     public List<SysUser> getAllUser() {
         return sysUserMapper.getAllUser();
     }
+
+    @Override
+    public SysUser findByUsername(String username) {
+        return sysUserMapper.findByUsername(username);
+
+    }
 }
